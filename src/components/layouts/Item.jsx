@@ -33,8 +33,8 @@ function Item({ item }) {
     position: 'top-center',
     // Styling
     style: {
-      background: "peachpuff",
-      color: "#000"
+      background: "#5cb85c",
+      color: "#fff"
     },
     className: '',
     // Aria
@@ -49,8 +49,8 @@ function Item({ item }) {
     position: 'top-center',
     // Styling
     style: {
-      background: "peachpuff",
-      color: "red"
+      background: "#d9534f",
+      color: "#fff"
     },
     className: '',
     // Aria
@@ -94,7 +94,7 @@ function Item({ item }) {
         dateOrder: date + " " + time,
       };
       
-      ok("Registered order");
+      ok("Order placed");
       dispatch(storeData(data));
       setCounter(value);
     }
