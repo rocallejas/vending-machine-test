@@ -3,7 +3,7 @@ import axios from "axios";
 import Skeleton from "../layouts/Skeleton";
 import Item from "../layouts/Item";
 import "./Products.css";
-import { CardColumns, Container } from "reactstrap";
+import { Row, Container } from "reactstrap";
 
 const Products = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +21,7 @@ const Products = () => {
       } finally {
         setTimeout(() => {
           setIsLoading(false);
-        }, 3000);
+        }, 1600);
       }
     };
     getProducts();
@@ -30,7 +30,7 @@ const Products = () => {
   return (
     <Container>
       <h1>Available Products</h1>
-      <CardColumns>
+      <Row>
         {isLoading ? (
           <Skeleton />
         ) : (
@@ -38,7 +38,7 @@ const Products = () => {
             <Item key={product.id} item={product} />
           ))
         )}
-      </CardColumns>
+      </Row>
     </Container>
   );
 };

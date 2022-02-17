@@ -1,0 +1,27 @@
+.shadow {
+  transition: all 0.5s ease 0s;
+  border-radius: 0.75rem;
+  border-color: transparent;
+  box-shadow: rgb(63 120 225 / 25%) 0px 0.2rem 0.2rem;
+}
+
+.container-thumbnail {
+  overflow: hidden;
+  border: 0.5rem solid rgb(255, 255, 255);
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.product-thumbnail {
+  width: auto !important;
+  height: 165px;
+  transition: all 0.5s ease 0s;
+  background-color: rgb(255, 255, 255);
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.btn-order{
+  margin-top: 10px;
+}

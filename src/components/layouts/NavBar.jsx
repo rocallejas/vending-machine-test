@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // reactstrap components
 import {
@@ -9,11 +9,8 @@ import {
   Nav,
   NavbarToggler,
   Collapse,
-  NavbarText,
-  
+  NavbarText,  
 } from "reactstrap";
-import Products from "../products/Products";
-import Orders from "../orders/Orders";
 
 import "./NavBar.css";
 
@@ -32,7 +29,6 @@ function NavBar() {
   const isToggle = () => setToggle(!toggle);
   return (
     <>
-      <Router>
         <Navbar color="dark" expand="md" light>
           <NavbarBrand to="/products">
             <img
@@ -56,12 +52,6 @@ function NavBar() {
             <NavbarText className="customText">Rodrigo Ortiz</NavbarText>
           </Collapse>
         </Navbar>
-        <Routes>
-          <Route path="/" element={<Products />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/orders" element={<Orders />} />
-        </Routes>
-      </Router>
     </>
   );
 }
