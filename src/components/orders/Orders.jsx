@@ -12,7 +12,7 @@ function Orders() {
   useEffect(() => {
     if (orders.length > 0) 
       {setIsEmpty(false);}    
-  }, []);
+  }, [orders.length]);
 
   return (
     <Container>
