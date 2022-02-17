@@ -90,7 +90,7 @@ function Item({ item }) {
         name: item.name,
         quantity: counter,
         time: item.preparation_time,
-        status: "pending",
+        status: "Pending",
         dateOrder: date + " " + time,
       };
       
