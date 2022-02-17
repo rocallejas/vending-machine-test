@@ -12,12 +12,18 @@ export const Order = ({ order, index }) => {
     }, 1000);
 
     return () => clearTimeout(timer);
-  });
+  }, [order]);
 
   return (
     <>
-      <div>{order.time}</div>
-      <div>{order.status}</div>
+        <tr>
+          <th scope="row">{index+1}</th>
+          <td>{order.name}</td>
+          <td>{order.quantity}</td>
+          <td>{order.time}</td>
+          <td>{order.status}</td>
+          <td>{order.dateOrder}</td>
+        </tr>      
     </>
   );
 };
