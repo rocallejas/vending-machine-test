@@ -30,17 +30,17 @@ const Products = () => {
   return (
     <Container>
       <Alert color="secondary">
-        <h4 className="alert-heading">
-          Available Products
-        </h4>
+        <h4 className="alert-heading">Available Products</h4>
         <p>
-          This is a vending machine app, if you want some of the available products just select the quantity and press the order button.
+          This is a vending machine app, if you want some of the available
+          products just select the quantity and press the order button.
         </p>
         <hr />
         <p className="mb-0">
           Please consider the estimated preparation time for each product.
         </p>
       </Alert>
+      
       <Row>
         {isLoading ? (
           <Skeleton />
