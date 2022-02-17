@@ -29,7 +29,7 @@ function NavBar() {
   const isToggle = () => setToggle(!toggle);
   return (
     <>
-        <Navbar color="dark" expand="md" light>
+        <Navbar color="dark" dark expand="md" light>
           <NavbarBrand to="/products">
             <img
               className="brandlogo"

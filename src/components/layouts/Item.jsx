@@ -65,7 +65,7 @@ function Item({ item }) {
                 +
               </Button>
             </InputGroup>            
-            <Button className="btn-order" block color="success" size="sm" outline type="submit" >
+            <Button className="btn-order" block color="secondary" size="sm" outline type="submit" >
               Order
             </Button>
           </Form>
